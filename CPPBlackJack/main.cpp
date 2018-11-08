@@ -8,21 +8,17 @@
 
 using namespace std;
 
-void playGame()
-{
-
-}
 
 int main()
 {
 	system("CLS");
-	cout << "Welcome to CPP BlackJack - Zach Gillis" << endl
-		<<  "======================================" << endl << endl;
 
 	// Game menu loop
 	while (true)
 	{
-		cout << "Please choose an option:\n"
+		cout << "Welcome to CPP BlackJack - Zach Gillis" << endl
+			<< "======================================" << endl << endl;
+		cout << "Please choose an option:\n\n"
 				<< "\t1. Start a new game\n"
 				<< "\t2. Exit\n\n>";
 

@@ -1,11 +1,8 @@
 #include "Deck.h"
-#include <vector>
-
 using namespace std;
 
 Deck::Deck()
 {
-	_cardList.push_back(Card(Card::Value::ACE, Card::Suit::CLUBS));
 	_cardList.push_back(Card(Card::Value::ACE, Card::Suit::CLUBS));
 	_cardList.push_back(Card(Card::Value::TWO, Card::Suit::CLUBS));
 	_cardList.push_back(Card(Card::Value::THREE, Card::Suit::CLUBS));
@@ -61,8 +58,9 @@ Deck::Deck()
 	_cardList.push_back(Card(Card::Value::JACK, Card::Suit::SPADES));
 	_cardList.push_back(Card(Card::Value::QUEEN, Card::Suit::SPADES));
 	_cardList.push_back(Card(Card::Value::KING, Card::Suit::SPADES));
-
-	// TODO: add shuffling.
+	
+	// Shuffle the deck
+	random_shuffle(_cardList.begin(), _cardList.end());
 
 	// Initialize iterator
 	_deckPoint = _cardList.begin();

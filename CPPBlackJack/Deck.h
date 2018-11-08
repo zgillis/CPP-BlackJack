@@ -1,5 +1,7 @@
 #pragma once
-#include <list>
+#include <algorithm>
+#include <iostream>
+#include <vector>
 #include <iterator>
 #include "Card.h"
 
@@ -7,8 +9,8 @@ using namespace std;
 
 class Deck
 {
-	list<Card> _cardList;
-	list<Card>::iterator _deckPoint;
+	vector<Card> _cardList;
+	vector<Card>::iterator _deckPoint;
 public:
 	Deck();
 	~Deck();

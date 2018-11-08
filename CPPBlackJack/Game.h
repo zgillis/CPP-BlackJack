@@ -1,10 +1,13 @@
 #pragma once
 #include "Card.h"
 #include "Deck.h"
-#include <list>
+#include <vector>
 #include <iterator>
 #include <string>
 #include <iostream>
+
+#define TEXT_SPEED 1000
+
 
 class Game
 {
@@ -12,10 +15,10 @@ class Game
 		int points;
 		string text;
 	};
-	list<Card*> _playerHand;
-	list<Card*> _dealerHand;
+	vector<Card*> _playerHand;
+	vector<Card*> _dealerHand;
 	Deck _gameDeck;
-	HandInfo _calcHandPoints(list<Card*>);
+	HandInfo _calcHandPoints(vector<Card*>);
 protected:
 	HandInfo calcPlayerHand();
 	HandInfo calcDealerHand();
