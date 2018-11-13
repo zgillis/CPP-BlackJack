@@ -4,6 +4,7 @@
 #include <iostream>
 #include "Deck.h"
 #include "Card.h"
+#include "Round.h"
 #include "Game.h"
 
 using namespace std;
@@ -27,8 +28,9 @@ int main()
 
 		system("CLS");
 		if (choice == '1') {
+			//TODO: Insert start game logic
 			Game game = Game();
-			game.playGame();
+			game.PlayGame();
 		}
 		else if (choice == '2')
 			return 0;

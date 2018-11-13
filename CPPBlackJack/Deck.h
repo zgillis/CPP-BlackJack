@@ -14,6 +14,6 @@ class Deck
 public:
 	Deck();
 	~Deck();
-	Card* drawCard();
+	Card* DrawCard();
 };
 

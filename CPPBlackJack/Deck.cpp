@@ -71,7 +71,7 @@ Deck::~Deck()
 {
 }
 
-Card* Deck::drawCard()
+Card* Deck::DrawCard()
 {
 	Card* nextCard = NULL;
 	_deckPoint++;
